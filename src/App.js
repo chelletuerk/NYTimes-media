@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Button from './Button'
+import './App.css'
+
 
 class App extends Component {
   constructor() {
@@ -33,6 +35,9 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <div className='banner'>
+          <span className='nytLogo'></span>
+        </div>
         <div id='articleList' className="list">{this.state.article}</div>
         <Button
           className='subscribe'
