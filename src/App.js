@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button'
 
 class App extends Component {
   constructor() {
@@ -25,6 +26,18 @@ class App extends Component {
     return (
       <div className='App'>
         <div id='articleList' className="list">{this.state.article}</div>
+        <Button
+          className='subscribe'
+          text='Subscribe'/>
+        <Button
+          className='digitalEdition'
+          text='Digital Edition' />
+        <Button
+          className='archives'
+          text='Archives' />
+        <Button
+          className='renewal'
+          text='Renewal' />
       </div>
     )
   }
