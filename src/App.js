@@ -15,7 +15,15 @@ class App extends Component {
     .then(data => this.setState({article: data.results.map((e, i) => {
       return(
         <div className='article' key={i}>
-          {e.abstract}
+          <img className='thumbnail' alt='' src={e.thumbnail_standard}>
+          </img>< br/>
+          <span>
+            <a className='title' href={e.url} rel="noreferrer" target="_blank">
+            {e.title}</a>< br/>< br/>
+            {e.abstract}< br/>< br/>
+            Published: {e.first_published_date.split('T')[0]}
+            at {e.first_published_date.split('T')[1]}
+          </span>
         </div>
       )
     })
