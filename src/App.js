@@ -43,7 +43,7 @@ class App extends Component {
             alt=''
             src={e.thumbnail_standard}>
           </img>< br/>
-          <span>
+          <span className='listSpan'>
             <a
               className='title'
               href={e.url} rel="noreferrer"
@@ -64,7 +64,7 @@ class App extends Component {
           <span className='nytLogo'></span>
         </div>
 
-        <div className='container'>
+        <div id='containerDiv' className='container'>
           <div className='firstArticle'>
             <img className='firstThumbnail' alt=''
             src={this.state.firstArticleImg}></img>< br/>
