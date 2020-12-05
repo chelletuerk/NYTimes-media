@@ -36,35 +36,24 @@ class App extends Component {
       this.setState({firstArticleDate: firstArticleDate})
       this.setState({firstArticleUrl: firstArticleUrl})
 
-      if (data.results.multimedia !== undefined) {
-        return(
-          <div id ='articleList' className='article' key={i}>
-            <img className='thumbnail' alt='' src={e.multimedia[1].url}></img>< br/>
-            <span><a className='title' href={e.url} rel="noreferrer" target="_blank">{e.title}</a>< br/>< br/>
+      return(
+        <div className='article' key={i}>
+          <img
+            className='thumbnail'
+            alt=''
+            src={e.thumbnail_standard}>
+          </img>< br/>
+          <span>
+            <a
+              className='title'
+              href={e.url} rel="noreferrer"
+              target="_blank">{e.title}
+            </a>< br/>< br/>
             {e.abstract}< br/>< br/>
-            Published: {e.first_published_date.split('T')[0]} at {e.first_published_date.split('T')[1].split('-')[0]}</span>
-          </div>
-          )
-      } else {
-        return(
-          <div className='article' key={i}>
-            <img
-              className='thumbnail'
-              alt=''
-              src={e.thumbnail_standard}>
-            </img>< br/>
-            <span>
-              <a
-                className='title'
-                href={e.url} rel="noreferrer"
-                target="_blank">{e.title}
-              </a>< br/>< br/>
-              {e.abstract}< br/>< br/>
-              Published: {e.first_published_date.split('T')[0]} at {e.first_published_date.split('T')[1].split('-')[0]}
-            </span>
-          </div>
+            Published: {e.first_published_date.split('T')[0]} at {e.first_published_date.split('T')[1].split('-')[0]}
+          </span>
+        </div>
         )
-      }
   })}))
 }
 
@@ -74,6 +63,8 @@ class App extends Component {
         <div className='banner'>
           <span className='nytLogo'></span>
         </div>
+
+        <div className='container'>
         <div className='firstArticle'>
           <img className='firstThumbnail' alt=''
           src={this.state.firstArticleImg}></img>< br/>
@@ -86,8 +77,10 @@ class App extends Component {
           </span>
         </div>
         <div id='articleList' className="list">
-          {this.state.article.slice(1)}
+          {this.state.article.slice(14)}
         </div>
+        </div>
+
         <div className='footer'>
         <div className='date'>{this.state.footerDate}</div>
         <Button
