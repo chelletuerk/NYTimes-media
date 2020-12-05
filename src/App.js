@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from './Button'
 import './App.css';
+import './media.css';
 
 class App extends Component {
   constructor() {
