@@ -65,20 +65,20 @@ class App extends Component {
         </div>
 
         <div className='container'>
-        <div className='firstArticle'>
-          <img className='firstThumbnail' alt=''
-          src={this.state.firstArticleImg}></img>< br/>
-          <span className='firstArticleSpan'>
-            <a className='title' href={this.state.firstArticleUrl}
-            rel='noreferrer' target='_blank'>{this.state.firstArticleTitle}
-            </a>< br/>< br/>
-            {this.state.firstArticleAbstract}< br/>< br/>
-            {this.state.firstArticleDate}
-          </span>
-        </div>
-        <div id='articleList' className="list">
-          {this.state.article.slice(14)}
-        </div>
+          <div className='firstArticle'>
+            <img className='firstThumbnail' alt=''
+            src={this.state.firstArticleImg}></img>< br/>
+            <span className='firstArticleSpan'>
+              <a className='title' href={this.state.firstArticleUrl}
+              rel='noreferrer' target='_blank'>{this.state.firstArticleTitle}
+              </a>< br/>< br/>
+              {this.state.firstArticleAbstract}< br/>< br/>
+              {this.state.firstArticleDate}
+            </span>
+          </div>
+          <div id='articleList' className="list">
+            {this.state.article.slice(14)}
+          </div>
         </div>
 
         <div className='footer'>
