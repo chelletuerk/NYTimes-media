@@ -240,7 +240,6 @@ img.thumbnail {
   div#articleList {
     margin-left: 62%;
   }
-
 }
 
 @media screen and (max-width: 1020px) {
@@ -293,6 +292,14 @@ img.thumbnail {
   .thumbnail {
     width: 315px;
   }
+
+  .listSpan {
+    right: 110px;
+  }
+
+  .firstArticleSpan {
+    left: -30px;
+  }
 }
 
 @media screen and (max-width: 795px) {
@@ -307,11 +314,33 @@ img.thumbnail {
   .thumbnail {
     width: 300px;
   }
+
+  .listSpan {
+    right:95px;
+  }
+
+  .firstArticleSpan {
+    left: -30px;
+  }
 }
 
 @media screen and (max-width: 730px) {
   div#articleList {
     margin-left: 54%;
+  }
+
+  .listSpan {
+    right: 46px;
+  }
+
+  .firstArticleSpan {
+    left: -30px;
+  }
+}
+
+@media screen and (max-width: 700) {
+  .listASpan{
+    right: 60px;
   }
 }
 
@@ -323,6 +352,14 @@ img.thumbnail {
   div#articleList {
     margin-left: 51%;
   }
+
+  .listSpan {
+    right: 30px;
+  }
+
+  .firstArticleSpan {
+    left: -30px;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -332,6 +369,10 @@ img.thumbnail {
 
   div#articleList {
     margin-left: 50%;
+  }
+
+  .listSpan {
+    right: 12px;
   }
 }
 
@@ -343,26 +384,12 @@ img.thumbnail {
   div#articleList {
     margin-left: 48.5%;
   }
+
+  .listSpan {
+    right: -3px;
+  }
+
+  .firstArticleSpan {
+    left: -42px;
+  }
 }
-
-
-
-
-/* @media only screen {
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .header-title {
-      font-size: 125px;
-    }
-    .search {
-      margin-top: 20px;
-    }
-    img {
-      width: 500px;
-    }
-    .card {
-      margin: 20px;
-      width: 50%;
-    } */
