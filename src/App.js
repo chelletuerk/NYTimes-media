@@ -99,12 +99,20 @@ class App extends Component {
           </div>
             {windowWidth > 1240 ? (
               <div id='articleList'
-                className='list'>{this.state.article.slice(14)}
+                className='list'>{this.state.article
+                  .slice(1)
+                  .reverse()
+                  .slice(13)
+                  .reverse()}
               </div>
             ) : (
               <div
                 id='articleList'
-                className='list'>{this.state.article.slice(17)}
+                className='list'>{this.state.article
+                  .slice(1)
+                  .reverse()
+                  .slice(16)
+                  .reverse()}
             </div>)}
           </div>
            <div className='footer'>
