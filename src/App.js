@@ -15,6 +15,26 @@ class App extends Component {
       firstArticleDate: [],
       firstArticleUrl: '',
     }
+    this.subscribe = this.subscribe.bind(this)
+    this.digitalEdition = this.digitalEdition.bind(this)
+    this.archives = this.archives.bind(this)
+    this.renewal = this.renewal.bind(this)
+  }
+
+  subscribe(props) {
+    window.location.href = 'https://help.nytimes.com/hc/en-us/sections/115002788207-About-subscriptions'
+  }
+
+  digitalEdition(props) {
+    window.location.href = 'https://www.nytimes.com/'
+  }
+
+  archives(props) {
+    window.location.href = 'https://archive.nytimes.com/www.nytimes.com/ref/membercenter/nytarchive.html'
+  }
+
+  renewal(props) {
+    window.location.href = 'https://memecreator.org/static/images/memes/4889203.jpg'
   }
 
   componentDidMount() {
@@ -37,7 +57,7 @@ class App extends Component {
       this.setState({firstArticleDate: firstArticleDate})
       this.setState({firstArticleUrl: firstArticleUrl})
 
-      return(
+      return (
         <div id='article' className='article' key={i}>
           <img
             className='thumbnail'
@@ -55,8 +75,8 @@ class App extends Component {
           </span>
         </div>
         )
-  })}))
-}
+    })}))
+  }
 
   render() {
     const windowWidth = window.innerWidth
@@ -85,23 +105,27 @@ class App extends Component {
               <div
                 id='articleList'
                 className='list'>{this.state.article.slice(17)}
-              </div>)}
+            </div>)}
           </div>
-        <div className='footer'>
-        <div className='date'>{this.state.footerDate}</div>
-        <Button
-          className='subscribe'
-          text='Subscribe' />
-        <Button
-          className='digitalEdition'
-          text='Digital Edition' />
-        <Button
-          className='archives'
-          text='Archives' />
-        <Button
-          className='renewal'
-          text='Renewal' />
-        </div>
+           <div className='footer'>
+           <div className='date'>{this.state.footerDate}</div>
+          <Button
+            className='subscribe'
+            text='Subscribe'
+            handleClick={this.subscribe} />
+          <Button
+            className='digitalEdition'
+            text='Digital Edition'
+            handleClick={this.digitalEdition} />
+          <Button
+            className='archives'
+            text='Archives'
+            handleClick={this.archives} />
+          <Button
+            className='renewal'
+            text='Renewal'
+            handleClick={this.renewal} />
+          </div>
       </div>
     )
   }
