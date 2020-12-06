@@ -123,8 +123,6 @@ img.thumbnail {
   margin: 10px 3px 3px 10px;
   cursor: pointer;
   border: ridge 505050 2px;
-  -webkit-transform:scale(1.03);
-  transform:scale(1.03);
 }
 
 .nytLogo {
@@ -180,4 +178,24 @@ img.thumbnail {
   box-shadow: 1px 2px 23px 6px #404040;
   border: ridge #505050 5px;
   z-index: 997;
+}
+
+.subscribe:hover {
+  -webkit-transform:scale(1.03);
+  transform:scale(1.03);
+}
+
+.digitalEdition:hover {
+  -webkit-transform:scale(1.03);
+  transform:scale(1.03);
+}
+
+.archives:hover {
+  -webkit-transform:scale(1.03);
+  transform:scale(1.03);
+}
+
+.renewal:hover {
+  -webkit-transform:scale(1.03);
+  transform:scale(1.03);
 }
