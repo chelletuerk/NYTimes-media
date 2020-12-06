@@ -7,6 +7,7 @@ span {
     width: 275px;
     height: 125px;
     margin-left: 17px;
+    margin-top: -175px;
     word-wrap:break-word;
     display: none;
     border-radius: 5px;
@@ -46,7 +47,7 @@ div#articleList {
 }
 
 img.firstThumbnail {
-  height: 90%;
+  height: 89.5%;
   width: 95%;
   min-width:95%;
   margin-top: 2px;
@@ -54,7 +55,7 @@ img.firstThumbnail {
 }
 
 img.thumbnail {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   border: ridge #505050 2px;
 }
 
@@ -88,7 +89,8 @@ img.thumbnail {
 
 .banner {
   width: 100%;
-  height: 90px;
+  height: 83px;
+  padding-right: 10px;
   background: url('./images/NYT.png') no-repeat;
   background-color: black;
 }
@@ -104,25 +106,25 @@ img.thumbnail {
 }
 
 .date {
-  height: 25px;
+  height: 17px;
   width: 100%;
   font-size: 22px;
   font-family: Arial Narrow, sans-serif;
   font-weight: bold;
   margin-left: 12px;
-  margin-top: -8px;
+  margin-top: -12px;
   padding-top: 10px;
 }
 
-.subscribe, .digitalEdition, .archives, .renewal {
-  height: 35px;
+button {
+  height: 33px;
   font-size: 17px;
   font-family: Arial Narrow, sans-serif;
   background-color: #316DA0;
-  color: white;
-  margin: 10px 3px 3px 10px;
+  color: #ECEBE4;
+  margin: 10px 0px 3px 10px;
   cursor: pointer;
-  border: ridge 505050 2px;
+  border: ridge #505050 2px;
 }
 
 .nytLogo {
@@ -146,18 +148,21 @@ img.thumbnail {
   display: block;
   background: #ECEBE4;
   opacity: 0.75;
-  z-index: 999;
 }
 
-.article:hover .thumbnail {
-  position: absolute;
-  display: block;
-  -webkit-box-shadow: 1px 2px 23px 6px #404040;
+.minipic:hover img{
+  background-color: black;
+  border: ridge #505050 5px;
+}
+
+.article:hover img {
+  display: hide;
+ -webkit-box-shadow: 1px 2px 23px 6px #404040;
   -moz-box-shadow: 1px 2px 23px 6px #404040;
   box-shadow: 1px 2px 23px 6px #404040;
+  transition: all .3s ease-out 0s;
+  background-color: black;
   border: ridge #505050 5px;
-  border: ridge #505050 5px;
-  z-index: 999;
 }
 
 .firstArticle:hover span {
@@ -175,27 +180,14 @@ img.thumbnail {
   display: block;
   -webkit-box-shadow: 1px 2px 23px 6px #404040;
   -moz-box-shadow: 1px 2px 23px 6px #404040;
+  transition: all .3s ease-out 0s;
+  background-color: black;
   box-shadow: 1px 2px 23px 6px #404040;
   border: ridge #505050 5px;
   z-index: 997;
 }
 
-.subscribe:hover {
-  -webkit-transform:scale(1.03);
-  transform:scale(1.03);
-}
-
-.digitalEdition:hover {
-  -webkit-transform:scale(1.03);
-  transform:scale(1.03);
-}
-
-.archives:hover {
-  -webkit-transform:scale(1.03);
-  transform:scale(1.03);
-}
-
-.renewal:hover {
+button:hover {
   -webkit-transform:scale(1.03);
   transform:scale(1.03);
 }

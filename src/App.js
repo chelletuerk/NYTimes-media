@@ -59,11 +59,11 @@ class App extends Component {
 
       return (
         <div id='article' className='article' key={i}>
-          <img
+          <a className='minipic'><img
             className='thumbnail'
             alt=''
             src={e.thumbnail_standard}>
-          </img>< br/>
+          </img></a>< br/>
           <span className='listSpan'>
             <a
               className='title'
