@@ -6,7 +6,7 @@ span {
     display:block;
     width: 275px;
     height: 125px;
-    margin-left: 15px;
+    margin-left: 17px;
     word-wrap:break-word;
     display: none;
     border-radius: 5px;
@@ -50,11 +50,12 @@ img.firstThumbnail {
   width: 95%;
   min-width:95%;
   margin-top: 2px;
-
+  border: ridge #505050 2px;
 }
 
 img.thumbnail {
   margin-bottom: 3px;
+  border: ridge #505050 2px;
 }
 
 .abstract, .publishDate {
@@ -121,14 +122,18 @@ img.thumbnail {
   color: white;
   margin: 10px 3px 3px 10px;
   cursor: pointer;
+  border: ridge 505050 2px;
+  -webkit-transform:scale(1.03);
+  transform:scale(1.03);
 }
+
 .nytLogo {
   position: absolute;
   right: 0;
 }
 
 .thumbnail {
-  height: 200px;
+  height: 191px;
   width: 300px;
   position: relative;
 }
@@ -149,18 +154,17 @@ img.thumbnail {
 .article:hover .thumbnail {
   position: absolute;
   display: block;
-  -webkit-transform:scale(1.03);
-  transform:scale(1.03);
   -webkit-box-shadow: 1px 2px 23px 6px #404040;
   -moz-box-shadow: 1px 2px 23px 6px #404040;
   box-shadow: 1px 2px 23px 6px #404040;
-  border: solid #404040 5px;
-  border: solid #404040 5px inset;
+  border: ridge #505050 5px;
+  border: ridge #505050 5px;
   z-index: 999;
 }
 
 .firstArticle:hover span {
   position: absolute;
+  overflow-y: scroll;
   display: block;
   background: #ECEBE4;
   opacity: 0.75;
@@ -171,11 +175,9 @@ img.thumbnail {
 .firstArticle:hover .firstThumbnail {
   position: relative;
   display: block;
-  -webkit-transform:scale(1);
-  transform:scale(1);
   -webkit-box-shadow: 1px 2px 23px 6px #404040;
   -moz-box-shadow: 1px 2px 23px 6px #404040;
   box-shadow: 1px 2px 23px 6px #404040;
-  border: solid #404040 5px;
+  border: ridge #505050 5px;
   z-index: 997;
 }
