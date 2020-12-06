@@ -37,7 +37,6 @@
 @media screen and (max-width: 1200px) {
   img.firstThumbnail {
     margin-left: 13%;
-    height: 86%;
     width: 100%;
   }
 }
@@ -122,7 +121,7 @@
     width: 315px;
   }
   .listSpan {
-    right: 110px;
+    right: 102px;
   }
   .firstArticleSpan {
     left: -30px;
@@ -161,7 +160,7 @@
 
 @media screen and (max-width: 758px) {
   .listSpan {
-    right: 78px;
+    right: 66px;
   }
 }
 
