@@ -84,7 +84,8 @@ class App extends Component {
             ) : (
               <div
                 id='articleList'
-                className='list'>{this.state.article.slice(17)}</div>)}
+                className='list'>{this.state.article.slice(17)}
+              </div>)}
           </div>
         <div className='footer'>
         <div className='date'>{this.state.footerDate}</div>
