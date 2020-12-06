@@ -38,7 +38,7 @@ class App extends Component {
       this.setState({firstArticleUrl: firstArticleUrl})
 
       return(
-        <div className='article' key={i}>
+        <div id='article' className='article' key={i}>
           <img
             className='thumbnail'
             alt=''
@@ -59,12 +59,12 @@ class App extends Component {
 }
 
   render() {
+    const windowWidth = window.innerWidth
     return (
       <div className='App'>
         <div className='banner'>
           <span className='nytLogo'></span>
         </div>
-
         <div id='containerDiv' className='container'>
           <div className='firstArticle'>
             <img className='firstThumbnail' alt=''
@@ -77,11 +77,15 @@ class App extends Component {
               {this.state.firstArticleDate}
             </span>
           </div>
-          <div id='articleList' className="list">
-            {this.state.article.slice(14)}
+            {windowWidth > 1240 ? (
+              <div id='articleList'
+                className='list'>{this.state.article.slice(14)}
+              </div>
+            ) : (
+              <div
+                id='articleList'
+                className='list'>{this.state.article.slice(17)}</div>)}
           </div>
-        </div>
-
         <div className='footer'>
         <div className='date'>{this.state.footerDate}</div>
         <Button

@@ -1,6 +1,44 @@
+@media screen and (max-width: 1340px) {
+  div#articleList {
+    margin-left: 49%;
+  }
+  .firstArticleSpan {
+    margin: 0 9%;
+  }
+}
+
+@media screen and (max-width: 1306px) {
+  .list {
+    gap: 2%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .list {
+    width: 42%;
+  }
+  span {
+    margin-left: 30px;
+  }
+  div#articleList {
+    margin-left: 64%
+  }
+  .thumbnail {
+    width: 330px;
+  }
+  img.firstThumbnail {
+    margin-left: 15%;
+  }
+  .firstArticleSpan {
+    margin: 0 16%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   img.firstThumbnail {
     margin-left: 13%;
+    height: 86%;
+    width: 100%;
   }
 }
 
@@ -62,7 +100,6 @@
   .thumbnail {
     width: 320px;
   }
-
   .firstArticleSpan {
     margin: 0 15%;
   }
@@ -209,7 +246,6 @@
   }
 }
 
-
 @media screen and (max-width: 630px) {
   img.firstThumbnail {
     margin-left: 0%;
@@ -230,7 +266,7 @@
 
 @media screen and (max-width: 617px) {
   div#articleList {
-    margin-left: 50%;
+    margin-left: 5%;
   }
 }
 
