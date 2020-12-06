@@ -5,6 +5,7 @@ html {
 span {
     display:block;
     width: 275px;
+    height: 125px;
     margin-left: 15px;
     word-wrap:break-word;
     display: none;
@@ -94,6 +95,7 @@ img.thumbnail {
 .footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   background-color: white;
   width: 100%;
   min-width: 600px;
@@ -106,7 +108,7 @@ img.thumbnail {
   font-size: 22px;
   font-family: Arial Narrow, sans-serif;
   font-weight: bold;
-  margin-left: 3px;
+  margin-left: 12px;
   margin-top: -8px;
   padding-top: 10px;
 }
@@ -117,7 +119,7 @@ img.thumbnail {
   font-family: Arial Narrow, sans-serif;
   background-color: #316DA0;
   color: white;
-  margin: 10px 3px 3px 3px;
+  margin: 10px 3px 3px 10px;
   cursor: pointer;
 }
 .nytLogo {
@@ -137,8 +139,9 @@ img.thumbnail {
 
 .article:hover span {
   position: absolute;
+  overflow-y: scroll;
   display: block;
-  background: #FFFFF1;
+  background: #ECEBE4;
   opacity: 0.75;
   z-index: 999;
 }
@@ -148,16 +151,18 @@ img.thumbnail {
   display: block;
   -webkit-transform:scale(1.03);
   transform:scale(1.03);
-  -webkit-box-shadow: 0px 0px 15px 10px #404040;
-  box-shadow: 0px 0px 15px 10px #404040;
+  -webkit-box-shadow: 1px 2px 23px 6px #404040;
+  -moz-box-shadow: 1px 2px 23px 6px #404040;
+  box-shadow: 1px 2px 23px 6px #404040;
   border: solid #404040 5px;
+  border: solid #404040 5px inset;
   z-index: 999;
 }
 
 .firstArticle:hover span {
   position: absolute;
   display: block;
-  background: #FFFFF1;
+  background: #ECEBE4;
   opacity: 0.75;
   z-index: 999;
   top: 4%;
@@ -168,8 +173,9 @@ img.thumbnail {
   display: block;
   -webkit-transform:scale(1);
   transform:scale(1);
-  -webkit-box-shadow: 0px 0px 15px 10px #404040;
-  box-shadow: 0px 0px 15px 10px #404040;
+  -webkit-box-shadow: 1px 2px 23px 6px #404040;
+  -moz-box-shadow: 1px 2px 23px 6px #404040;
+  box-shadow: 1px 2px 23px 6px #404040;
   border: solid #404040 5px;
-  z-index: 999;
+  z-index: 997;
 }

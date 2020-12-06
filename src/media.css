@@ -266,13 +266,13 @@
 
 @media screen and (max-width: 617px) {
   div#articleList {
-    margin-left: 5%;
+    margin-left: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
   img.firstThumbnail {
-    margin-left: 0%;
+    margin-left: 50%;
   }
   div#articleList {
     margin-left: 50%;
