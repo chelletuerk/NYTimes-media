@@ -42,7 +42,8 @@ class App extends Component {
     .then((res) => res.json())
     .then(data => this.setState({article: data.results.map((e, i) => {
       const date = e.first_published_date.split('T')[0]
-      const firstArticleImg = data.results[0].thumbnail_standard
+      // const firstArticleImg = data.results[0].thumbnail_standard
+      const firstArticleImg = data.results[0].multimedia[1].url
       const firstArticleTitle = data.results[0].title
       const firstArticleAbstract = data.results[0].abstract
       const firstArticleDate = data.results[0].first_published_date
@@ -62,7 +63,8 @@ class App extends Component {
           <a className='minipic'><img
             className='thumbnail'
             alt=''
-            src={e.thumbnail_standard}>
+            // src={e.thumbnail_standard}>
+            src={e.multimedia[1].url}>
           </img></a>< br/>
           <span className='listSpan'>
             <a
