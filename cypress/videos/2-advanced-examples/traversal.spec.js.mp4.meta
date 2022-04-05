@@ -1,0 +1,91 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=5314
+END=7014
+title=Traversal .children() - get child DOM elements
+[CHAPTER]
+TIMEBASE=1/1000
+START=7720
+END=8718
+title=Traversal .closest() - get closest ancestor DOM element
+[CHAPTER]
+TIMEBASE=1/1000
+START=8836
+END=9717
+title=Traversal .eq() - get a DOM element at a specific index
+[CHAPTER]
+TIMEBASE=1/1000
+START=9317
+END=10599
+title=Traversal .filter() - get DOM elements that match the selector
+[CHAPTER]
+TIMEBASE=1/1000
+START=10078
+END=11882
+title=Traversal .find() - get descendant DOM elements of the selector
+[CHAPTER]
+TIMEBASE=1/1000
+START=12335
+END=13690
+title=Traversal .first() - get first DOM element
+[CHAPTER]
+TIMEBASE=1/1000
+START=14115
+END=15047
+title=Traversal .last() - get last DOM element
+[CHAPTER]
+TIMEBASE=1/1000
+START=15117
+END=15981
+title=Traversal .next() - get next sibling DOM element
+[CHAPTER]
+TIMEBASE=1/1000
+START=15683
+END=16850
+title=Traversal .nextAll() - get all next sibling DOM elements
+[CHAPTER]
+TIMEBASE=1/1000
+START=17099
+END=18018
+title=Traversal .nextUntil() - get next sibling DOM elements until next el
+[CHAPTER]
+TIMEBASE=1/1000
+START=18241
+END=18938
+title=Traversal .not() - remove DOM elements from set of DOM elements
+[CHAPTER]
+TIMEBASE=1/1000
+START=18659
+END=19637
+title=Traversal .parent() - get parent DOM element from DOM elements
+[CHAPTER]
+TIMEBASE=1/1000
+START=19732
+END=20617
+title=Traversal .parents() - get parent DOM elements from DOM elements
+[CHAPTER]
+TIMEBASE=1/1000
+START=20761
+END=21504
+title=Traversal .parentsUntil() - get parent DOM elements from DOM elements until el
+[CHAPTER]
+TIMEBASE=1/1000
+START=21300
+END=22249
+title=Traversal .prev() - get previous sibling DOM element
+[CHAPTER]
+TIMEBASE=1/1000
+START=22318
+END=23199
+title=Traversal .prevAll() - get all previous sibling DOM elements
+[CHAPTER]
+TIMEBASE=1/1000
+START=23304
+END=24085
+title=Traversal .prevUntil() - get all previous sibling DOM elements until el
+[CHAPTER]
+TIMEBASE=1/1000
+START=23876
+END=24866
+title=Traversal .siblings() - get all sibling DOM elements
